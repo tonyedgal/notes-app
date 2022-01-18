@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Notes from "./pages/Notes";
 import Create from "./pages/Create";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import { red } from "@material-ui/core/colors";
+import { blue } from "@material-ui/core/colors";
 
 const theme = createTheme({
   palette: {
-    primary: red,
+    primary: blue,
   },
   typography: {
-    fontFamily: "Quicksand",
+    fontFamily: "Manrope",
     fontWeightLight: 400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
