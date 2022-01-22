@@ -10,7 +10,7 @@ const theme = createTheme({
     primary: blue,
   },
   typography: {
-    fontFamily: "Manrope",
+    fontFamily: "Yaldevi",
     fontWeightLight: 400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,

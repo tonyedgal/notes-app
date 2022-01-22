@@ -45,7 +45,7 @@ export default function Create() {
     }
 
     if (title && details) {
-      console.log(title, details, category);
+      console.log(`${title}, ${details}, ${category}`);
     }
   };
 
