@@ -9,9 +9,9 @@ import {
   FormControlLabel,
   FormLabel,
   FormControl,
+  makeStyles,
 } from "@material-ui/core";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
   field: {
@@ -21,6 +21,7 @@ const useStyles = makeStyles({
   },
   heading: {
     textAlign: "center",
+    fontFamily: "Assistant",
   },
 });
 
