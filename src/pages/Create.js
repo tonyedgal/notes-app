@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     marginTop: 20,
     marginBottom: 20,
     display: "block",
+    fontFamily: "Yaldevi",
   },
   heading: {
     textAlign: "center",
