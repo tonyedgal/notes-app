@@ -19,10 +19,22 @@
       "id": 3
     },
     {
-      "title": "Daily commit",
-      "details": "Maintain daily commit streak",
-      "category": "reminders",
-      "id": 4
+      "title": "Get paid",
+      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima illo cupiditate sit, quasi voluptatum perferendis libero quisquam quidem facilis.\n",
+      "category": "money",
+      "id": 5
+    },
+    {
+      "title": "Testing Json ID",
+      "details": "Lorem ipsum dolor",
+      "category": "todos",
+      "id": 6
+    },
+    {
+      "title": "Bolonius is eating beans",
+      "details": "Beans and dodo for lunch",
+      "category": "work",
+      "id": 7
     }
   ]
 }
