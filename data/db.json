@@ -35,6 +35,12 @@
       "details": "Beans and dodo for lunch",
       "category": "work",
       "id": 7
+    },
+    {
+      "title": "Drawer design",
+      "details": "Drawer design has been completed, on to the next",
+      "category": "work",
+      "id": 8
     }
   ]
 }
