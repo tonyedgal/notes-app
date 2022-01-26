@@ -19,11 +19,10 @@ const useStyles = makeStyles({
     marginTop: 20,
     marginBottom: 20,
     display: "block",
-    fontFamily: "Yaldevi",
   },
   heading: {
-    textAlign: "center",
     fontFamily: "Assistant",
+    marginTop: 10,
   },
 });
 
@@ -62,11 +61,11 @@ export default function Create() {
       <Container>
         <Typography
           className={classes.heading}
-          variant="h3"
-          component="h3"
+          variant="h4"
+          component="h2"
           gutterBottom
         >
-          Create page
+          Create A New Note
         </Typography>
 
         <form noValidate autoComplete="off" onSubmit={handleSubmit}>
