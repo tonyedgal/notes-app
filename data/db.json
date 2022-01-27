@@ -41,6 +41,18 @@
       "details": "Drawer design has been completed, on to the next",
       "category": "work",
       "id": 8
+    },
+    {
+      "title": "Build and monetize an API",
+      "details": "Build and monetize your very own API(Saas)",
+      "category": "todos",
+      "id": 9
+    },
+    {
+      "title": "Get Paid training people to build APIs",
+      "details": "Pitch the idea and hold a training, to teach people how to build APIs and monetize them.",
+      "category": "money",
+      "id": 10
     }
   ]
 }

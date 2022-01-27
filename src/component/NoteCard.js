@@ -13,14 +13,30 @@ const useStyles = makeStyles({
   content: {
     fontFamily: "Yaldevi",
   },
+  border: {
+    border: (note) => {
+      if (note.category === "money") {
+        return "1px solid #55efc4";
+      }
+      if (note.category === "todos") {
+        return "1px solid #6c5ce7";
+      }
+      if (note.category === "reminders") {
+        return "1px solid #0097e6";
+      }
+      if (note.category === "work") {
+        return "1px solid #e84118";
+      }
+    },
+  },
 });
 
 export default function NoteCard({ note, handleDelete }) {
-  const classes = useStyles();
+  const classes = useStyles(note);
 
   return (
     <>
-      <Card elevation={1}>
+      <Card elevation={1} className={classes.border}>
         <CardHeader
           className={classes.content}
           action={
