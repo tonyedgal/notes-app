@@ -13,23 +13,30 @@ import { useHistory, useLocation } from "react-router-dom";
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles({
-  page: {
-    backgroundColor: "#f9f9f9",
-    width: "100%",
-  },
-  drawer: {
-    width: drawerWidth,
-  },
-  drawerPaper: {
-    width: drawerWidth,
-  },
-  root: {
-    display: "flex",
-  },
-  active: {
-    backgroundColor: "#f4f4f4",
-  },
+const useStyles = makeStyles((theme) => {
+  return {
+    page: {
+      backgroundColor: "#f9f9f9",
+      width: "100%",
+      padding: theme.spacing(3),
+    },
+    drawer: {
+      width: drawerWidth,
+    },
+    drawerPaper: {
+      width: drawerWidth,
+    },
+    root: {
+      display: "flex",
+    },
+    active: {
+      backgroundColor: "#f4f4f4",
+    },
+    title: {
+      padding: theme.spacing(1),
+      textAlign: "center",
+    },
+  };
 });
 
 export default function Layout({ children }) {
@@ -60,7 +67,9 @@ export default function Layout({ children }) {
         classes={{ paper: classes.drawerPaper }}
       >
         <div>
-          <Typography variant="h5">Space man notes</Typography>
+          <Typography variant="h5" className={classes.title}>
+            SpaceMan notes
+          </Typography>
         </div>
         {/* List & links */}
         <List>
