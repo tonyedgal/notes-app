@@ -38,7 +38,6 @@ export default function NoteCard({ note, handleDelete }) {
     <>
       <Card elevation={1} className={classes.border}>
         <CardHeader
-          className={classes.content}
           action={
             <IconButton onClick={() => handleDelete(note.id)}>
               <DeleteOutlined />
