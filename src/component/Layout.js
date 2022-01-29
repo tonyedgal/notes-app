@@ -14,6 +14,7 @@ import {
 import { AddCircleOutlineOutlined, SubjectOutlined } from "@material-ui/icons";
 import { useHistory, useLocation } from "react-router-dom";
 import { format } from "date-fns";
+import avatar from "../images/avatar.jpg";
 
 const drawerWidth = 240;
 
@@ -47,6 +48,9 @@ const useStyles = makeStyles((theme) => {
     date: {
       flexGrow: 1,
     },
+    avatar: {
+      marginLeft: theme.spacing(2),
+    },
   };
 });
 
@@ -77,8 +81,8 @@ export default function Layout({ children }) {
             {" "}
             Today is the {format(new Date(), "do MMMM Y")}
           </Typography>
-          <Typography>Tony</Typography>
-          <Avatar src="../../public/avatar.jpg" />
+          <Typography>SpaceMan</Typography>
+          <Avatar src={avatar} alt="Avatar" className={classes.avatar} />
         </Toolbar>
       </AppBar>
 
