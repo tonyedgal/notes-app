@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+import { blue } from "@material-ui/core/colors";
 import Notes from "./pages/Notes";
 import Create from "./pages/Create";
-import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import { red } from "@material-ui/core/colors";
+import Layout from "./component/Layout";
 
 const theme = createTheme({
   palette: {
-    primary: red,
+    primary: blue,
   },
   typography: {
     fontFamily: "Quicksand",
@@ -22,14 +23,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Notes />
-          </Route>
-          <Route path="/create">
-            <Create />
-          </Route>
-        </Switch>
+        <Layout>
+          <Switch>
+            <Route exact path="/">
+              <Notes />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+          </Switch>
+        </Layout>
       </Router>
     </ThemeProvider>
   );
