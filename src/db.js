@@ -7,10 +7,10 @@ export const notes = [
     id: 1,
   },
   {
-    title: "Complete my Backend training",
+    title: "Get paid",
     details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-    category: "work",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima illo cupiditate sit, quasi voluptatum perferendis libero quisquam quidem facilis.\n",
+    category: "money",
     id: 2,
   },
   {
@@ -21,29 +21,29 @@ export const notes = [
     id: 3,
   },
   {
-    title: "Test Note",
+    title: "Complete my Backend training",
     details:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    category: "money",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+    category: "work",
     id: 4,
   },
   {
-    title: "Get paid",
+    title: "Test Note",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minima illo cupiditate sit, quasi voluptatum perferendis libero quisquam quidem facilis.\n",
-    category: "money",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    category: "reminders",
     id: 5,
+  },
+  {
+    title: "Bolonius is eating beans",
+    details: "Beans and dodo for lunch",
+    category: "money",
+    id: 6,
   },
   {
     title: "Testing Json ID",
     details: "Lorem ipsum dolor",
     category: "todos",
-    id: 6,
-  },
-  {
-    title: "Bolonius is eating beans",
-    details: "Beans and dodo for lunch",
-    category: "work",
     id: 7,
   },
   {

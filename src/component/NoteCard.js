@@ -13,7 +13,15 @@ import { blue, green, pink, yellow } from "@material-ui/core/colors";
 
 const useStyles = makeStyles({
   content: {
-    fontFamily: "Yaldevi",
+    fontFamily: (note) => {
+      if (note.category === "money") {
+        return "Barlow";
+      }
+      if (note.category === "todos") {
+        return "Yaldevi";
+      }
+      return "Assistant";
+    },
   },
   border: {
     border: (note) => {
