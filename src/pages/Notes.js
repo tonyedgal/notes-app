@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Grid } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import NoteCard from "../component/NoteCard";
+import Masonry from "react-masonry-css";
 import { notes } from "../db";
 
 export default function Notes() {
@@ -16,25 +17,30 @@ export default function Notes() {
     //   await fetch("http://localhost:8000/notes/" + id, {
     //     method: "DELETE",
     //   });
-
     //   const newNotes = notes.filter((note) => note.id !== id);
-
     //   setNotes(newNotes);
-    if (notes.id === id) {
-      console.log(`${notes.title} has been deleted`);
-    }
+  };
+
+  const breakpoints = {
+    default: 3,
+    1100: 2,
+    700: 1,
   };
 
   return (
     <>
       <Container>
-        <Grid container spacing={3}>
+        <Masonry
+          breakpointCols={breakpoints}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
           {notes.map((note) => (
-            <Grid item key={note.id} xs={12} md={6} lg={4}>
+            <div key={note.id} y>
               <NoteCard note={note} handleDelete={handleDelete} />
-            </Grid>
+            </div>
           ))}
-        </Grid>
+        </Masonry>
       </Container>
     </>
   );
