@@ -50,7 +50,7 @@
     },
     {
       "title": "Build and monetize an API",
-      "details": "Build and monetize your very own API(Saas)",
+      "details": "Build and monetize your very own API",
       "category": "todos",
       "id": 9
     },
@@ -59,6 +59,12 @@
       "details": "Pitch the idea and hold a training, to teach people how to build APIs and monetize them.",
       "category": "money",
       "id": 10
+    },
+    {
+      "title": "Why is this happening",
+      "details": "It's doing my head in. Arrrrrgh",
+      "category": "todos",
+      "id": 11
     }
   ]
 }

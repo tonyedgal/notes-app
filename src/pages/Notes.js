@@ -1,24 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Grid } from "@material-ui/core";
 import NoteCard from "../component/NoteCard";
+import { notes } from "../db";
 
 export default function Notes() {
-  const [notes, setNotes] = useState([]);
+  // const [notes, setNotes] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/notes")
-      .then((res) => res.json())
-      .then((data) => setNotes(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/notes")
+  //     .then((res) => res.json())
+  //     .then((data) => setNotes(data));
+  // }, []);
 
-  const handleDelete = async (id) => {
-    await fetch("http://localhost:8000/notes/" + id, {
-      method: "DELETE",
-    });
+  const handleDelete = (id) => {
+    //   await fetch("http://localhost:8000/notes/" + id, {
+    //     method: "DELETE",
+    //   });
 
-    const newNotes = notes.filter((note) => note.id !== id);
+    //   const newNotes = notes.filter((note) => note.id !== id);
 
-    setNotes(newNotes);
+    //   setNotes(newNotes);
+    if (notes.id === id) {
+      console.log(`${notes.title} has been deleted`);
+    }
   };
 
   return (
