@@ -7,8 +7,6 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  AppBar,
-  Toolbar,
   Avatar,
   Divider,
 } from "@material-ui/core";
@@ -16,8 +14,9 @@ import { AddCircleOutlineOutlined, SubjectOutlined } from "@material-ui/icons";
 import { useHistory, useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import avatar from "../images/avatar.jpg";
+import Appbar from "./Appbar";
 
-const drawerWidth = 240;
+let drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -35,22 +34,13 @@ const useStyles = makeStyles((theme) => {
     root: {
       display: "flex",
     },
+    toolbar: theme.mixins.toolbar,
     active: {
       backgroundColor: "#f4f4f4",
     },
     date: {
       padding: theme.spacing(2),
       textAlign: "center",
-    },
-    appbar: {
-      width: `calc(100% - ${drawerWidth}px)`,
-    },
-    toolbar: theme.mixins.toolbar,
-    title: {
-      flexGrow: 1,
-    },
-    avatar: {
-      marginLeft: theme.spacing(2),
     },
     navAvatar: {
       width: theme.spacing(3),
@@ -91,15 +81,7 @@ export default function Layout({ children }) {
   return (
     <div className={classes.root}>
       {/* App bar */}
-      <AppBar className={classes.appbar} elevation={0} color="inherit">
-        <Toolbar>
-          <Typography variant="h5" className={classes.title}>
-            Spaceman Notes
-          </Typography>
-          <Typography>SpaceMan</Typography>
-          <Avatar src={avatar} alt="Avatar" className={classes.avatar} />
-        </Toolbar>
-      </AppBar>
+      <Appbar />
 
       {/* Side drawer */}
       <Drawer
