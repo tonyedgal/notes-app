@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { blue } from "@material-ui/core/colors";
 import Notes from "./pages/Notes";
 import Create from "./pages/Create";
+import Profile from "./pages/Profile";
 import Layout from "./component/Layout";
 
 const theme = createTheme({
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/create">
               <Create />
+            </Route>
+            <Route path="/profile">
+              <Profile />
             </Route>
           </Switch>
         </Layout>
