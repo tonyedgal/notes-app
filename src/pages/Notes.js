@@ -1,8 +1,8 @@
-import React from "react";
-import { Container } from "@material-ui/core";
-import NoteCard from "../component/NoteCard";
-import Masonry from "react-masonry-css";
-import { notes } from "../db";
+import React from 'react'
+import { Container } from '@material-ui/core'
+import NoteCard from '../component/NoteCard'
+import Masonry from 'react-masonry-css'
+import { notes } from '../db'
 
 export default function Notes() {
   // const [notes, setNotes] = useState([]);
@@ -19,21 +19,21 @@ export default function Notes() {
     //   });
     //   const newNotes = notes.filter((note) => note.id !== id);
     //   setNotes(newNotes);
-  };
+  }
 
   const breakpoints = {
     default: 3,
     1100: 2,
-    700: 1,
-  };
+    700: 1
+  }
 
   return (
     <>
       <Container>
         <Masonry
           breakpointCols={breakpoints}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
+          className='my-masonry-grid'
+          columnClassName='my-masonry-grid_column'
         >
           {notes.map((note) => (
             <div key={note.id} y>
@@ -43,5 +43,5 @@ export default function Notes() {
         </Masonry>
       </Container>
     </>
-  );
+  )
 }

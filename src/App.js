@@ -1,24 +1,24 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@material-ui/core/styles";
-import { blue } from "@material-ui/core/colors";
-import Notes from "./pages/Notes";
-import Create from "./pages/Create";
-import Profile from "./pages/Profile";
-import Layout from "./component/Layout";
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { createTheme, ThemeProvider } from '@material-ui/core/styles'
+import { blue } from '@material-ui/core/colors'
+import Notes from './pages/Notes'
+import Create from './pages/Create'
+import Profile from './pages/Profile'
+import Layout from './component/Layout'
 
 const theme = createTheme({
   palette: {
-    primary: blue,
+    primary: blue
   },
   typography: {
-    fontFamily: "Quicksand",
+    fontFamily: 'Quicksand',
     fontWeightLight: 400,
     fontWeightRegular: 500,
     fontWeightMedium: 600,
-    fontWeightBold: 700,
-  },
-});
+    fontWeightBold: 700
+  }
+})
 
 function App() {
   return (
@@ -26,20 +26,20 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route exact path="/">
+            <Route exact path='/'>
               <Notes />
             </Route>
-            <Route path="/create">
+            <Route path='/create'>
               <Create />
             </Route>
-            <Route path="/profile">
+            <Route path='/profile'>
               <Profile />
             </Route>
           </Switch>
         </Layout>
       </Router>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
